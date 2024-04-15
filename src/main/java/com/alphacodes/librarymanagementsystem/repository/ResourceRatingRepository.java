@@ -1,9 +1,10 @@
 package com.alphacodes.librarymanagementsystem.repository;
 
-import com.alphacodes.librarymanagementsystem.Model.Article;
+import com.alphacodes.librarymanagementsystem.Model.ResourceRating;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ArticleRepository extends JpaRepository<Article, Integer> {
+public interface ResourceRatingRepository extends JpaRepository<ResourceRating, Long>{
+
 }
