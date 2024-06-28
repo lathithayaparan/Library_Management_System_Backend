@@ -5,7 +5,8 @@ import jakarta.persistence.Lob;
 import lombok.Data;
 
 @Data
-public class ArticleDto {
+public class ArticleViewDto {
+    private int articleID;
     private String userID;
     private String title;
     private String body;
