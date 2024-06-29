@@ -3,7 +3,8 @@ package com.alphacodes.librarymanagementsystem.DTO;
 import lombok.Data;
 
 @Data
-public class ResourceDto {
+public class ResourceViewDto {
+    Long resourceId;
     private String isbn;
     private String title;
     private String author;
