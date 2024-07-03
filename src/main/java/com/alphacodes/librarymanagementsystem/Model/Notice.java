@@ -5,26 +5,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Fine {
+@Table(name = "notices")
+public class Notice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long fineId;
-    private double amount;
-    private boolean paidStatus;
-    private Date resourceIssueDate;
+    private Long id;
+    private String title;
+    private String message;
 
     @ManyToOne
-    @JoinColumn(name = "member", nullable = false)
-    private User member;
-
-    @ManyToOne
-    @JoinColumn(name = "librarian", nullable = false)
     private User librarian;
 }
-
